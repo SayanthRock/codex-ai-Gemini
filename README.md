@@ -1,181 +1,139 @@
 # Codex AI Gemini
 
-A beginner-friendly repository for learning how to use **OpenAI Codex** with a **Gemini-based AI project**.
+A beginner-friendly website for learning how to use **OpenAI Codex** with a **Gemini-based AI project**.
 
-This project explains the basic idea, setup flow, and how to ask Codex for help inside GitHub Pull Requests.
-
----
-
-## What this repository is for
-
-This repository helps beginners learn how to:
-
-- Build a simple AI assistant project
-- Use Gemini for AI features
-- Use Codex inside GitHub Pull Requests
-- Ask Codex to review, explain, and improve code
-- Keep project setup simple and understandable
-- Write clear documentation
+The site explains what Codex is, what Gemini is, and how to use `@codex` inside GitHub Pull Requests.
 
 ---
 
-## What is OpenAI Codex?
+## Live website
 
-**OpenAI Codex** is a coding assistant that can help with code inside GitHub.
+After GitHub Pages is enabled, the website can be published from this repository.
 
-After connecting ChatGPT to GitHub, open a Pull Request and comment:
+Expected GitHub Pages URL:
 
 ```text
-@codex review this PR
+https://sayanthrock.github.io/codex-ai-Gemini/
 ```
 
-Codex can help with:
-
-- Code review
-- Bug fixes
-- Code explanations
-- Project cleanup
-- Documentation improvements
-- Security checks
-- Build error fixes
-
-Codex GitHub link:
-
-- [https://github.com/codex](https://github.com/codex)
-
 ---
 
-## What is Gemini?
-
-**Gemini** is an AI model from Google. It can be used to add AI features to apps, websites, and tools.
-
-Possible project ideas:
-
-- AI chat assistant
-- Study helper
-- Code explanation tool
-- Text generator
-- Question-answering app
-- AI search helper
-
----
-
-## Recommended project structure
+## Project files
 
 ```text
 codex-ai-Gemini/
-├── README.md
+├── .github/workflows/pages.yml
 ├── .gitignore
+├── .nojekyll
+├── README.md
 ├── example.env
+├── index.html
 ├── package.json
-└── src/
-    └── index.js
+├── script.js
+└── styles.css
 ```
 
 ---
 
-## Basic setup idea
+## What this website includes
 
-### 1. Clone the repository
+- Clean responsive homepage
+- Dark premium UI
+- Mobile navigation menu
+- Codex explanation
+- Gemini explanation
+- Pull Request workflow
+- Useful `@codex` prompt examples
+- GitHub Pages deployment workflow
 
-```bash
-git clone https://github.com/SayanthRock/codex-ai-Gemini.git
-cd codex-ai-Gemini
-```
+---
 
-### 2. Install dependencies
+## Run locally
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-### 3. Add your local configuration
+Start the local development server:
 
-Create a local configuration file on your own computer and keep private credentials out of GitHub.
+```bash
+npm run dev
+```
 
-Only upload safe example files that do not contain real private values.
+Build the website:
+
+```bash
+npm run build
+```
+
+Preview the build:
+
+```bash
+npm run preview
+```
 
 ---
 
 ## How to use Codex in Pull Requests
 
-Open a Pull Request and comment with `@codex`.
+First, connect ChatGPT to GitHub.
 
-Examples:
+Then open a Pull Request and comment:
+
+```text
+@codex review this PR
+```
+
+Useful examples:
 
 ```text
 @codex review this PR and suggest improvements
 ```
 
 ```text
-@codex fix the build errors in this PR
+@codex fix the build errors and explain what changed
 ```
 
 ```text
-@codex improve the README so beginners can understand it
+@codex improve the code structure and keep it simple for beginners
 ```
 
 ```text
-@codex check the project structure and suggest better organization
+@codex update the README so new users can understand and run the project easily
 ```
 
 ---
 
-## Good Codex prompts
+## GitHub Pages setup
 
-Clear prompts give better results. Vague prompts create vague output, the ancient curse of software development.
-
-### Review the project
+Go to repository settings:
 
 ```text
-@codex review this project. Find bugs, missing files, and setup problems.
+Settings → Pages → Source → GitHub Actions
 ```
 
-### Fix errors
-
-```text
-@codex fix the errors and explain what changed.
-```
-
-### Improve structure
-
-```text
-@codex improve the code structure and keep it simple.
-```
-
-### Improve documentation
-
-```text
-@codex update the documentation so new users can run the project easily.
-```
+Then push to the `main` branch. The workflow will deploy the static website.
 
 ---
 
-## Beginner checklist
+## Beginner safety checklist
 
-Before asking Codex for help, check that:
+Before publishing changes:
 
-- The repository has project files
-- The README explains the project clearly
-- The setup steps are easy to follow
-- Private configuration files are not committed
-- The Pull Request title is clear
-- The Codex comment says exactly what help is needed
+- Keep private credentials out of GitHub
+- Test the site locally
+- Check the mobile menu
+- Check all buttons and links
+- Open a Pull Request for larger changes
+- Ask Codex to review before merging
 
 ---
 
-## Future improvements
+## Codex GitHub link
 
-This repository can later include:
-
-- A simple Node.js backend
-- A React frontend
-- Gemini chat feature
-- Better error handling
-- Loading states
-- Chat history
-- GitHub Actions workflow
-- Deployment guide
+[https://github.com/codex](https://github.com/codex)
 
 ---
 
