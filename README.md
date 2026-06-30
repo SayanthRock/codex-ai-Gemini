@@ -1,20 +1,20 @@
 # Codex AI Gemini
 
-A simple beginner-friendly repository for learning how to use **OpenAI Codex** with a **Gemini-based AI project**.
+A beginner-friendly repository for learning how to use **OpenAI Codex** with a **Gemini-based AI project**.
 
-This project is designed so anyone can understand the basic idea, setup flow, and how to ask Codex for help inside GitHub Pull Requests.
+This project explains the basic idea, setup flow, and how to ask Codex for help inside GitHub Pull Requests.
 
 ---
 
 ## What this repository is for
 
-This repository can be used to learn how to:
+This repository helps beginners learn how to:
 
 - Build a simple AI assistant project
 - Use Gemini for AI features
 - Use Codex inside GitHub Pull Requests
 - Ask Codex to review, explain, and improve code
-- Keep project setup easy for beginners
+- Keep project setup simple and understandable
 - Write clear documentation
 
 ---
@@ -23,7 +23,7 @@ This repository can be used to learn how to:
 
 **OpenAI Codex** is a coding assistant that can help with code inside GitHub.
 
-After connecting ChatGPT to GitHub, you can open a Pull Request and comment:
+After connecting ChatGPT to GitHub, open a Pull Request and comment:
 
 ```text
 @codex review this PR
@@ -38,6 +38,10 @@ Codex can help with:
 - Documentation improvements
 - Security checks
 - Build error fixes
+
+Codex GitHub link:
+
+- [https://github.com/codex](https://github.com/codex)
 
 ---
 
@@ -62,7 +66,7 @@ Possible project ideas:
 codex-ai-Gemini/
 ├── README.md
 ├── .gitignore
-├── .env.example
+├── example.env
 ├── package.json
 └── src/
     └── index.js
@@ -85,23 +89,11 @@ cd codex-ai-Gemini
 npm install
 ```
 
-### 3. Create a local environment file
+### 3. Add your local configuration
 
-Create a file named `.env` on your own computer.
+Create a local configuration file on your own computer and keep private credentials out of GitHub.
 
-Example:
-
-```env
-GEMINI_API_KEY=your_gemini_key_here
-```
-
-Do not commit your private `.env` file to GitHub.
-
-A safe public example file can be named:
-
-```text
-.env.example
-```
+Only upload safe example files that do not contain real private values.
 
 ---
 
@@ -166,7 +158,7 @@ Before asking Codex for help, check that:
 - The repository has project files
 - The README explains the project clearly
 - The setup steps are easy to follow
-- Private environment files are not committed
+- Private configuration files are not committed
 - The Pull Request title is clear
 - The Codex comment says exactly what help is needed
 
