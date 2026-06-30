@@ -1,7 +1,6 @@
 :root {
   color-scheme: dark;
   --bg: #080b14;
-  --bg-soft: #101728;
   --card: rgba(255, 255, 255, 0.07);
   --card-strong: rgba(255, 255, 255, 0.11);
   --text: #f6f8ff;
@@ -54,6 +53,11 @@ a {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid rgba(226, 184, 132, 0.75);
+  outline-offset: 4px;
 }
 
 .container {
@@ -299,8 +303,11 @@ code {
 .feature-grid,
 .prompt-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .feature-card {
@@ -365,12 +372,10 @@ code {
   border-radius: var(--radius-md);
   color: var(--text);
   text-align: left;
-  cursor: pointer;
   transition: transform 180ms ease, border-color 180ms ease;
 }
 
-.prompt-card:hover,
-.prompt-card:focus-visible {
+.prompt-card:hover {
   transform: translateY(-3px);
   border-color: rgba(226, 184, 132, 0.55);
 }
@@ -384,13 +389,6 @@ code {
 .prompt-card code {
   color: var(--muted);
   white-space: normal;
-}
-
-.copy-status {
-  min-height: 28px;
-  margin: 18px 0 0;
-  color: var(--accent-strong);
-  font-weight: 700;
 }
 
 .cta-section {
@@ -445,10 +443,6 @@ code {
 
   .hero-card {
     transform: none;
-  }
-
-  .prompt-grid {
-    gap: 14px;
   }
 }
 
