@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Codex AI Gemini is a beginner-friendly website for learning how to use OpenAI Codex with a Gemini-based AI project."
+    />
+    <title>Codex AI Gemini</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="Codex AI Gemini home">
+          <span class="brand-mark">AI</span>
+          <span>Codex AI Gemini</span>
+        </a>
+
+        <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#prompts">Prompts</a>
+          <a href="#start">Start</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">OpenAI Codex + Gemini learning project</p>
+            <h1>Build, review, and improve AI projects with a simple GitHub workflow.</h1>
+            <p class="hero-text">
+              A clean starter website for learning how Codex can help with pull requests,
+              documentation, bug fixes, and project structure while building a Gemini-based AI app.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="https://github.com/SayanthRock/codex-ai-Gemini" target="_blank" rel="noreferrer">
+                View Repository
+              </a>
+              <a class="button secondary" href="https://github.com/codex" target="_blank" rel="noreferrer">
+                Codex on GitHub
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Example Codex command">
+            <div class="card-topline">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <p class="code-label">Pull Request comment</p>
+            <pre><code>@codex review this PR and suggest improvements</code></pre>
+            <p class="card-note">
+              Use clear prompts so Codex knows what to review, fix, or explain.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Features</p>
+            <h2>Made for beginners, not for confusing people professionally.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Simple learning path</h3>
+              <p>Understand the basic idea of Codex, Gemini, GitHub, pull requests, and safe project setup.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Codex prompt examples</h3>
+              <p>Use ready-made prompts to ask Codex for reviews, bug fixes, documentation updates, and cleanup.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Clean website base</h3>
+              <p>A responsive static website that can be improved later with React, Node.js, or a Gemini chat UI.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="workflow" class="section muted-section">
+        <div class="container split-grid">
+          <div>
+            <p class="eyebrow">Workflow</p>
+            <h2>How the project should grow</h2>
+            <p>
+              Start small. Add files, create a pull request, ask Codex to review it, then improve the project step by step.
+              This prevents the usual software tragedy: ten folders, zero working app.
+            </p>
+          </div>
+
+          <ol class="steps">
+            <li><strong>Create files</strong><span>Add website or app files to the repository.</span></li>
+            <li><strong>Open Pull Request</strong><span>Describe what changed clearly.</span></li>
+            <li><strong>Tag Codex</strong><span>Ask for review, bug fixes, or improvements.</span></li>
+            <li><strong>Merge safely</strong><span>Review changes before merging to main.</span></li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="prompts" class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Codex prompts</p>
+            <h2>Copy a useful prompt</h2>
+          </div>
+
+          <div class="prompt-grid">
+            <button class="prompt-card" type="button" data-prompt="@codex review this PR. Find bugs, missing files, setup problems, and security issues.">
+              <span>Review PR</span>
+              <code>@codex review this PR...</code>
+            </button>
+            <button class="prompt-card" type="button" data-prompt="@codex fix the build errors and explain what changed.">
+              <span>Fix build</span>
+              <code>@codex fix the build errors...</code>
+            </button>
+            <button class="prompt-card" type="button" data-prompt="@codex improve the code structure and keep it simple for beginners.">
+              <span>Improve code</span>
+              <code>@codex improve the code...</code>
+            </button>
+            <button class="prompt-card" type="button" data-prompt="@codex update the README so new users can understand and run the project easily.">
+              <span>Improve docs</span>
+              <code>@codex update the README...</code>
+            </button>
+          </div>
+
+          <p class="copy-status" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section id="start" class="section cta-section">
+        <div class="container cta-card">
+          <p class="eyebrow">Start now</p>
+          <h2>Make the repository useful, then let Codex help improve it.</h2>
+          <p>
+            This website is only the first step. Next, add a real Gemini assistant, simple backend,
+            clear setup files, and GitHub Actions for automatic checks.
+          </p>
+          <a class="button primary" href="https://github.com/SayanthRock/codex-ai-Gemini" target="_blank" rel="noreferrer">
+            Open Project
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>© <span id="year"></span> Sayanth Rock. Built for Codex AI Gemini.</p>
+        <a href="#top">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
